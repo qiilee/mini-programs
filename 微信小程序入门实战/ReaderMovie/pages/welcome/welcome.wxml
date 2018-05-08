@@ -1,0 +1,9 @@
+<!--wexml是编写小程序骨架的文件-->
+<!--div和view是一样的-->
+<view class='container'>
+    <image class='user-avatar' src="/images/touxang.png"></image>
+    <text class='user-name'><text style='color:red'>holle</text>,七月</text>
+    <view class='moto-container'  bindtap="bindViewTap">
+        <text class='moto' bindtap="onteztop">开启小程序之旅</text>
+    </view>
+</view>

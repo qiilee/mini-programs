@@ -1,0 +1,40 @@
+.container{
+    /*弹性模型*/
+    display:flex;
+    /*垂直方向 列方向 排布*/
+    flex-direction:column;
+    /*居中*/
+    align-items:center;
+    /*要从整体解决排布的问题是最好的方案*/
+    
+    
+}
+
+.user-avatar{width:150rpx;
+height:150rpx;
+margin-top:160rpx;
+}
+
+.user-name{
+    margin-top:150rpx;
+    font-size:32rpx;
+    font-weight:bold;
+}
+.moto-container{
+    margin-top:200rpx;
+    border:1px solid #405f80;
+    width:200rpx;
+    height:80rpx;
+    border-radius:5rpx;
+    text-align:center;
+}
+.moto{
+    font-size:22rpx;
+    font-weight:bold;
+    line-height:80rpx;
+    color:#405f80;
+}
+page{
+    height:100%;
+    background:#b3d4db;
+}
