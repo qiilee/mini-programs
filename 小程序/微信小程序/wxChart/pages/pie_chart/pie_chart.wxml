@@ -1,0 +1,4 @@
+<canvas canvas-id="first_canvas"
+bindtouchstart="onTouchStart" bindtouchmove="onTouchMove" bindtouchend="onTouchEnd" bindtouchcancel="onTouchCancel"
+style="height:400px;width:100%;border:0px solid #000;" >
+</canvas>

@@ -1,0 +1,44 @@
+<import src="../../../utils/playpercent.wxml" />
+<import src="../../../utils/lrc.wxml" />
+<view id="playingpage">
+  <view id="fm-bg" class="blurbg" style="background-image:url({{music.album.blurPicUrl}})"></view>
+  <view id="fm-covermain" class="{{showlrc?'playinghidden':''}}" bindtap="loadlrc">
+    <image id="fm-cmbg" src="../../../image/fm/a99.png" />
+    <image id="fm-cmpic" bindload="loadimg" class="{{imgload?'fadein':''}}" src="{{music.album.picUrl}}" />
+  </view>
+  <view id="fm-mdes" class="{{showlrc?'playinghidden':''}}">
+    <text id="fm-mname">{{music.name}}</text>
+    <text id="fm-martist">{{music.artists[0].name}}</text>
+  </view>
+  <template is="lrc" data="{{lrc:lrc,showlrc:showlrc,lrcindex:lrcindex}}" />
+  <view id="fm-fixed">
+    <template is="playingpercent" data="{{playtime:playtime,percent:percent,duration:duration}}" />
+    <view id="fm-action">
+      <view data-id="{{music.id}}">
+        <image src="../../../image/fm/aaw.png" />
+      </view>
+      <view data-id="{{music.id}}" hidden="{{music.stared}}">
+        <image src="../../../image/fm/py.png" />
+      </view>
+      <view data-id="{{music.id}}" hidden="{{!music.stared}}">
+        <image src="../../../image/fm/q0.png" />
+      </view>
+      <view bindtap="play" hidden="{{!playing}}">
+        <image src="../../../image/fm/q4.png" />
+      </view>
+      <view bindtap="play" hidden="{{playing}}">
+        <image src="../../../image/fm/q8.png" />
+      </view>
+      <view bindtap="nextplay">
+        <image src="../../../image/fm/q2.png" />
+      </view>
+      <view class="commentscount">
+        <navigator url="../recommend/index?id={{music.commentThreadId}}&from=song">
+          <image wx:if="{{!commentscount}}" src="../../../image/a_e.png" />
+          <image wx:if="{{commentscount}}" src="../../../image/a_f.png" />
+          <text wx:if="{{commentscount}}">{{commentscount>999?'999+':(commentscount>99?'99+':commentscount)}}</text>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

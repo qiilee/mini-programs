@@ -1,0 +1,19 @@
+.top-img{
+    width:100%;
+  
+}
+.tag{
+    height:35rpx;
+    font-size:22rpx;
+    padding: 0 13rpx;
+    line-height: 35rpx;
+    color:#666;
+    border:1px solid #ccc;
+    border-radius:54px;
+    margin:10rpx 10rpx 0 10rpx;
+}
+.content{
+    color:#666;
+    margin:10rpx;
+    font-size:26rpx;
+}

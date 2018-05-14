@@ -1,0 +1,24 @@
+/**index.wxss**/
+
+
+.voice-style {
+  margin-top: 400px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg-style {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+.sound-style{
+  position: absolute;
+  width: 37.6px;
+  height: 60px;
+  margin-top: 20px;
+}
+
+

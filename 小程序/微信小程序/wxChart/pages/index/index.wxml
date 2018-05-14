@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <button bindtap="goToChart">go to chart</button>
+	  <button bindtap="goToPieChart">go to PieChart</button>
+    <button bindtap="goToCandlestickChart">go to mycandlestick</button>
+    <button bindtap="goToLogs">go to logs</button>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>

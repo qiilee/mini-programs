@@ -1,0 +1,8 @@
+
+/*中间描述文字样式*/
+.centerContent{
+  margin-top: 20rpx;
+  width: 100%;
+  height: 600rpx;
+
+}

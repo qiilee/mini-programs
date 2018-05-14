@@ -1,0 +1,26 @@
+/*中间文字样式*/
+.centerContent{
+  margin-top: 20rpx;
+  width: 100%;
+  height: 600rpx;
+
+}
+/*中间浮动文字样式*/
+.flexView{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 80rpx;
+position: absolute;
+z-index: 2;
+top: 540rpx;
+background: #000000;
+opacity: 0.6
+
+}
+/*浮动文字*/
+.flexText{
+  color: white;
+  font-size: 35rpx;
+}

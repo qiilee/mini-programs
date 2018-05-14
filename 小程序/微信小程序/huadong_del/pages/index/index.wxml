@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+  <view wx:for="{{cardTeams}}" wx:for-item="cardTeam" id="{{cardTeam.id}}" class="item" bindtouchstart="drawStart" bindtouchmove="drawMove" bindtouchend="drawEnd" style="right:{{cardTeam.right}}px">
+        <image class="img" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" mode="scaleToFill"></image>
+        <view class="number-wrapper">
+          <text class="name">{{cardTeam.name}}</text>
+          <view class="count-wrapper">
+            <view class="decrease-btn">-</view>
+            <text class="count">1</text>
+            <view class="increase-btn">+</view>
+          </view>
+          <view class="price-wrapper">
+            <text class="unit">¥</text>
+            <text class="price">99.80</text>
+          </view>
+        </view>
+        <view class="ok"><view class="inner-ok">确定</view></view>
+        <view class="remove" data-id="{{cardTeam.id}}" bindtap="delItem"><view>删除</view></view>
+      </view>
+</view>

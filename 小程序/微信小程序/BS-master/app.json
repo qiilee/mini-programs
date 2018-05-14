@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/word/word",
+    "pages/image/image",
+    "pages/voice/voice",
+    "pages/video/video",
+    "pages/detail/detail"
+  ],
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#eb4f38",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/word/word",
+        "text": "段子",
+        "iconPath": "image/wordN.png",
+        "selectedIconPath": "image/wordS.png"
+      },
+      {
+        "pagePath": "pages/image/image",
+        "text": "图片",
+        "iconPath": "image/imageN.png",
+        "selectedIconPath": "image/imageS.png"
+      },
+      {
+        "pagePath": "pages/voice/voice",
+        "text": "声音",
+        "iconPath": "image/voiceN.png",
+        "selectedIconPath": "image/voiceS.png"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "text": "视频",
+        "iconPath": "image/videoN.png",
+        "selectedIconPath": "image/videoS.png"
+      }
+      
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#eb4f38",
+    "navigationBarTextStyle":"white"
+  }
+}

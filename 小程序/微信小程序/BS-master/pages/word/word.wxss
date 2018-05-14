@@ -1,0 +1,5 @@
+
+/*中间文字样式*/
+.centerContent{
+  font-size: 33rpx;
+}

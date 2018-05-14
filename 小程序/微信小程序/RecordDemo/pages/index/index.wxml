@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view  class="voice-style" bindtap="startSpeak">
+<image class="bg-style" src="../../images/voice_icon_speaking_bg_normal.png" ></image>
+<image class="bg-style" animation="{{spreakingAnimation}}" src="../../images/voice_video_loading_0.png"></image>
+<image class="bg-style" animation="{{spreakingAnimation_1}}" src="../../images/voice_video_loading_0.png"></image>
+<image class="bg-style" animation="{{spreakingAnimation_2}}" src="../../images/voice_video_loading_0.png"></image>
+<image class="sound-style" src="../../images/voice_icon_speech_sound_1.png" ></image>
+<image wx:if="{{j==2}}" class="sound-style" src="../../images/voice_icon_speech_sound_2.png" ></image>
+<image wx:if="{{j==3}}" class="sound-style" src="../../images/voice_icon_speech_sound_3.png" ></image>
+<image wx:if="{{j==4}}" class="sound-style" src="../../images/voice_icon_speech_sound_4.png" ></image>
+<image wx:if="{{j==5}}"class="sound-style" src="../../images/voice_icon_speech_sound_5.png" ></image>
+</view>
+

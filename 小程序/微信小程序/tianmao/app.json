@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#B136B9",
+    "navigationBarTitleText": "仿天猫抽奖",
+    "navigationBarTextStyle":"white"
+  }
+}
+ 

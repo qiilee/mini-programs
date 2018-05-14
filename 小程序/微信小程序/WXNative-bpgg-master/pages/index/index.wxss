@@ -1,0 +1,19 @@
+.container{background: #f7f7f7;}
+.slide-image{width: 100%;}
+.btn-sudoku{display: flex;justify-content: space-between;flex-wrap: wrap;background: #fff}
+.btn-sudoku .nav-item{width: 25%;text-align: center}
+.btn-sudoku .icon{width: 70%;height: 131.25rpx;padding: 10% 15%;}
+.item-title{display: flex;justify-content: space-around;align-items: center;height: 134rpx}
+.item-title text{font-size: 1.2em;color: #c81623}
+.item-title:before,.item-title:after{display: block;content: '';height: 1px;width: 25%;background: #aaa}
+
+
+.list-goods{display: flex;flex-wrap: wrap;}
+.item-goods{width: 40%;margin: 0 5%;background: #fff;margin-bottom: 40rpx}
+.img-item{width: 100%;height: 300rpx;box-sizing: border-box;border: 1px solid #fff}
+.nav-item .name{overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;white-space: normal;height: 3em;}
+.nav-item .price{color: #f23030;font-size: 1.2em}
+.nav-item .price text{color: #e5a087;font-size: .7em;text-decoration: line-through}
+.nav-item .operate{display: flex;justify-content: space-between;align-items: center;color: #c1c1c1;font-size: .85em}
+.nav-item .icon-cart{width: 50rpx;height: 50rpx;}
+

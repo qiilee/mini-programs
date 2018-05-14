@@ -1,0 +1,84 @@
+<view class="container">
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item.imgUrl}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="btn-sudoku">
+    <navigator url="../logs/logs" class="nav-item">
+      <image src="../../src/img/subnav_01.png" mode="aspectFit" class="icon"/>
+      搜索
+    </navigator>
+    <navigator url="logs" class="nav-item" >
+      <image src="../../src/img/subnav_02.png" mode="aspectFit" class="icon"/>
+      客服
+    </navigator>
+    <navigator url="logs" class="nav-item" >
+      <image src="../../src/img/subnav_03.png" mode="aspectFit" class="icon"/>
+      订单
+    </navigator>
+    <navigator url="logs" class="nav-item" >
+      <image src="../../src/img/subnav_04.png" mode="aspectFit" class="icon"/>
+      收藏
+    </navigator>
+    <navigator url="logs" class="nav-item" >
+      <image src="../../src/img/subnav_05.png" mode="aspectFit" class="icon"/>
+      团购
+    </navigator>
+    <navigator url="logs" class="nav-item" >
+      <image src="../../src/img/subnav_06.png" mode="aspectFit" class="icon"/>
+      预售
+    </navigator>
+    <navigator url="logs" class="nav-item" >
+      <image src="../../src/img/subnav_07.png" mode="aspectFit" class="icon"/>
+      秒杀
+    </navigator>
+    <navigator url="logs" class="nav-item" >
+      <image src="../../src/img/subnav_08.png" mode="aspectFit" class="icon"/>
+      活动
+    </navigator>
+  </view>
+  <view class="item-title">
+    <text>精品推荐</text>
+  </view>
+  <view class="list-goods">
+    <view wx:for="{{recommendationList}}" class="item-goods">
+      <navigator url="../goodDetail/goodDetail?id={{item.id}}" class="nav-item" >
+        <image src="{{item.goodsImageUrl}}" mode="aspectFit" class="img-item"/>
+        <text class="name">{{item.goodsName}}</text>
+        <view class="price">
+          ￥{{item.goodsPrice}}
+          <text>￥{{item.goodsOriginalPrice}}</text>
+        </view>
+        <view class="operate">
+          <text>已售：{{item.saleNum}}件</text>
+          <image src="../../src/img/toCart.png" mode="aspectFit" class="icon-cart"/>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <view class="item-title">
+    <text>最热商品</text>
+  </view>
+  <view class="list-goods">
+    <view wx:for="{{hotSaleList}}" class="item-goods">
+      <navigator url="../goodDetail/goodDetail?id={{item.id}}" class="nav-item" >
+        <image src="{{item.goodsImageUrl}}" mode="aspectFit" class="img-item"/>
+        <text class="name">{{item.goodsName}}</text>
+        <view class="price">
+          ￥{{item.goodsPrice}}
+          <text>￥{{item.goodsOriginalPrice}}</text>
+        </view>
+        <view class="operate">
+          <text>已售：{{item.saleNum}}件</text>
+          <image src="../../src/img/toCart.png" mode="aspectFit" class="icon-cart"/>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <text hidden="{{!loadAnimation}}">loading...</text>
+  <text hidden="{{!noMore}}">noMore...</text>
+</view>

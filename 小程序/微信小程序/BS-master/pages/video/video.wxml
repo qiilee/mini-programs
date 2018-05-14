@@ -1,0 +1,40 @@
+<loading hidden="{{loadingHidden}}">正在加载...</loading>
+<scroll-view scroll-y="true" bindscrolltolower="bindscrolltolower" style="height: 100%">
+  <block wx:for-items="{{list}}">
+    <!-- 分割线 -->
+    <view class="divLine"></view>
+    <!-- 整体item样式 -->
+    <view class="containsView">
+      <view class="topContainsView">
+        <image class="profileImage" src="{{item.profile_image}}" />
+        <view class="topRightView">
+          <text class="topRightName">{{item.name}}</text>
+          <text class="topRightTime">{{item.passtime}}</text>
+        </view>
+      </view>
+      <!-- 描述 -->
+      <text style="font-size: 30rpx">{{item.text}}</text>
+      <!-- 视频组件 -->
+      <video src="{{item.videouri}}" binderror="error" style="width: 100%; height: 50%; margin-top: 15rpx" />
+      <!-- 底部view样式 -->
+      <view class="bottomView">
+        <view class="bottomItemView">
+          <image class="bottomItemImage" src="../../image/ding.png" />
+          <text class="bottomItemText">{{item.ding}}</text>
+        </view>
+        <view class="bottomItemView">
+          <image class="bottomItemImage" src="../../image/cai.png" />
+          <text class="bottomItemText">{{item.cai}}</text>
+        </view>
+        <view class="bottomItemView">
+          <image class="bottomItemImage" src="../../image/share.png" />
+          <text class="bottomItemText">{{item.repost}}</text>
+        </view>
+        <view class="bottomItemView">
+          <image class="bottomItemImage" src="../../image/comment.png" />
+          <text class="bottomItemText">{{item.comment}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</scroll-view>

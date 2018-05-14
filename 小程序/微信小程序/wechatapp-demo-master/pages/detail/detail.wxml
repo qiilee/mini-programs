@@ -1,0 +1,9 @@
+<view>
+    <image src="{{image}}" class="top-img" mode="aspectFill"></image>
+    <view class="clearfix">
+        <view wx:for="{{tag}}" class="tag fl">{{item.name}}</view>
+    </view>
+    <!--<view class="content">{{content}}</view>-->
+    <import src="../../tpl/ComponentContent/content.wxml"/>
+    <template is="tplContent" data="{{content}}"/>
+</view>

@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/show/show",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "时尚购",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#353535",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+     
+      {
+        "pagePath": "pages/show/show",
+        "text": "去购物"
+      },
+       {
+        "pagePath": "pages/index/index",
+        "text": "我的"
+      }
+    ]
+  }
+}
