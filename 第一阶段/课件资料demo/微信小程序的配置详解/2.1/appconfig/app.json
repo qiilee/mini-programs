@@ -1,0 +1,47 @@
+{
+  "pages":[
+   
+    "pages/index/index",
+    "pages/logs/logs",
+     "pages/test/test"
+   
+  ],
+
+
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#ddd",
+    "navigationBarTitleText": "极客学院",
+    "navigationBarTextStyle":"white"
+  },
+
+
+  "tabBar": {
+    "color":"#333",
+    "borderStyle":"white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath":"images/icon1.png",
+      "selectedIconPath":"images/icon1s.png",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/logs/logs",
+       "iconPath":"images/icon2.png",
+      "selectedIconPath":"images/icon2s.png",
+      "text": "日志"
+    }]
+  },
+
+
+
+   "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+
+
+  "debug":true
+
+
+
+}

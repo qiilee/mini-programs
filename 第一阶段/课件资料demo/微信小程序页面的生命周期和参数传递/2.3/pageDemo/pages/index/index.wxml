@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+  
+  <navigator url="../logs/logs?id=100&title=标题" >
+  <view >
+    <text class="user-motto">文章1</text>
+  </view>
+  </navigator>
+
+   <view >
+    <text class="user-motto">文章2</text>
+  </view>
+
+   <view >
+    <text class="user-motto">文章3</text>
+  </view>
+
+   <view >
+    <text class="user-motto">文章4</text>
+  </view>
+</view>
