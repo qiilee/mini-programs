@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/selectColor/selectColor"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#787878",
+    "navigationBarTitleText": "视频播放器",
+    "navigationBarTextStyle":"white"
+  }
+}

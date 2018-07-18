@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#363527",
+    "navigationBarTitleText": "石头剪刀布",
+    "navigationBarTextStyle":"white"
+  }
+}

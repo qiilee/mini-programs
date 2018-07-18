@@ -1,0 +1,21 @@
+#searchpage{padding-top: 171rpx;height: 100%;box-sizing: border-box;overflow: hidden}
+#search_input{padding: 25rpx 25rpx;background-color: #f8f8f9;margin-top: -171rpx;height:50rpx;}
+#search_input .form{display: flex;}
+#search_input .form view{width:100%}
+#search_input input{border:1rpx solid #ececec;color: #515151;background-color: #ececec;
+border-radius:4rpx;font-size: 28rpx;padding: 0 .5em;box-sizing: border-box;height: 50rpx;line-height: 48rpx;display: block;}
+#search_input .button{width: 70rpx;padding-left: 20rpx; flex: 0 0 50rpx;line-height: 80rpx;overflow: hidden}
+.button button{padding: 0;height:50rpx;border: none;line-height: 1;width: 50rpx;display:block;text-align: center;}
+
+#search_tab{margin-top: -15rpx;background-color: #f8f8f9;height: 81rpx;}
+#search_result{height: 100%;position: relative;}
+#search_result .seare_list{height: 100%;}
+#search_result scroll-view{height:100%}
+
+.albums .flexlist{margin-left: 156rpx;padding: 10rpx 20rpx 10rpx 0}
+.albums .fl-image{width: 118rpx;margin-left: -136rpx;margin-right: 20rpx;}
+.albums .fl-image .albums_cover{position: absolute;width: 118rpx;height: 100rpx;left: 0;top: 0;z-index: 0}
+
+.mvs .cover{padding-top: 56%}
+.mvs{padding: 10rpx}
+.mvs .tl_cnt{width: 50%;padding:0 10rpx 20rpx;}
