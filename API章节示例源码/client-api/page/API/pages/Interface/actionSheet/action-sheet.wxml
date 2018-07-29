@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="page-body">
+    <view class="btn-area">
+      <button type="default" bindtap="actionSheetTap">弹出action sheet</button>
+    </view>
+  </view>
+</view>
