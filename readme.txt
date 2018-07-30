@@ -6,3 +6,6 @@
    javascript  是六种类型
 6.wxs  提供六种基础了类库  number date global console math json
 7.小程序使用的是MINA架构
+8.小程序神魔时候会被销毁，后台运行超过5分钟，或者5秒内连续收到报警
+9.小程序冷启动时，发现新的版本，会异步下载最新版本包
+10.生命周期：onLaunch onShow onHide onError
