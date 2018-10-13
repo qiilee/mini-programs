@@ -12,5 +12,7 @@
   四个   在app.js中使用
 * 11.页面生命周期：onLoad初次加载  onShow onReady onHide onUnload
 * 12.事件：
-  * 可捕获事件：touchstart touchmove touchcancel touchend tap longpress longtap
+  * 可捕获事件：touchstart touchmove touchcancel touchend tap（<350ms） longpress(>350ms 推荐) longtap
   * 可冒泡事件：touchstart touchmove touchcancel touchend tap longpress longtap  transitionend animationstart animationiteration animationend touchforcechange
+* 13.组件：八类组件
+  * 媒体组件 地图 开放能力 画布 视图容器 基础内容 表单组件 导航
