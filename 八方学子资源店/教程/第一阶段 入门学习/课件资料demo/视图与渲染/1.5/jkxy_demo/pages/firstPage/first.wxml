@@ -1,0 +1,21 @@
+<include src="../templates/header" />
+
+jikexueyuan demo ..
+
+
+<button type="default"  hover-class="other-button-hover"> default </button>
+<button type="primary" bindtap="btnClick"> {{btnText}} </button>
+
+
+<view  wx:if="{{show}}" >{{text}} 1 </view>
+<view  wx:else >{{text}} 2 </view>
+
+
+<view wx:for="{{news}}" wx:for-item="itemx" wx:for-index="ix">
+
+ {{ix}} - {{itemx}}
+
+</view>
+
+<import src="../templates/footer" />
+<template is="footer2" data="{{text:'导入设置的内容...'}}" />

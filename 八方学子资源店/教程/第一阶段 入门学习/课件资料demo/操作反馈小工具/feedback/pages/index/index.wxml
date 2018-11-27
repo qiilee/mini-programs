@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+  
+  <button type="primary" bindtap="click"> 按钮 </button >
+
+
+  <action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+    <action-sheet-item bindtap="itemClick" data-name="name1" data-id="1">item1</action-sheet-item>
+    <action-sheet-item bindtap="itemClick" data-name="name2">item2</action-sheet-item>
+    <action-sheet-item bindtap="itemClick" data-name="name3">item3</action-sheet-item>
+
+    <action-sheet-cancel >取消</action-sheet-cancel>
+</action-sheet>
+
+
+ <modal title="标题" confirm-text="确认" cancel-text="取消" hidden="{{modalHidden}}" 
+   bindconfirm="modalConfirm" bindcancel="modalCancel">
+  这是对话框的内容。
+  </modal>
+
+  <toast hidden="{{toastHidden}}" duration="3000" bindchange="toastChange">
+    默认
+  </toast>
+
+  <loading hidden="{{loadinHidden}}" >
+    加载中...
+  </loading>
+
+
+</view>
