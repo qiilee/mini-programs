@@ -10,6 +10,6 @@
   <text>{{text}}</text>
 
   <block wx:for="{{icons}}">
-    <icon type="{{item}}" size="45" color="red" />
+    <icon type="{{item}}" size="20" color="green" />
   </block>
 </view>

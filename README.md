@@ -10,7 +10,7 @@
 * 9.小程序冷启动时，发现新的版本，会异步下载最新版本包
 * 10.应用生命周期：onLaunch初始化调用 onShow前台时调用 onHide后台运行调用 onError出错调用
   四个   在app.js中使用
-* 11.页面生命周期：onLoa初d次加载页面初始化 onReady页面渲染完成  onShow页面显示  onHide页面隐藏 onUnload页面关闭
+* 11.页面生命周期：onLoa初d次加载页面初始化 onShow页面显示 onReady页面渲染完成  onHide页面隐藏 onUnload页面关闭
 * 12.事件：
   * 可捕获事件：touchstart touchmove touchcancel touchend tap（<350ms） longpress(>350ms 推荐) longtap
   * 可冒泡事件：touchstart touchmove touchcancel touchend tap longpress longtap  transitionend animationstart animationiteration animationend touchforcechange
