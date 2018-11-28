@@ -1,7 +1,0 @@
-<!--logs.wxml-->
-<view class="container">
-   <button type="primary" bindtap="click"> 按钮 </button >
-
- 
-
-</view>
