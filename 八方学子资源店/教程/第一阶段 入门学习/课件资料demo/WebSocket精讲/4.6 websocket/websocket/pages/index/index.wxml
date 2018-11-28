@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+  
+<button type="default" bindtap="openBtnClick"> 开启连接 </button>
+<button type="default" bindtap="sendBtnClick"> 发送消息 </button>
+<button type="default" bindtap="closeBtnClick"> 关闭连接 </button>
+
+
+<view wx:for="{{messsges}}">{{item}} </view>
+</view>
