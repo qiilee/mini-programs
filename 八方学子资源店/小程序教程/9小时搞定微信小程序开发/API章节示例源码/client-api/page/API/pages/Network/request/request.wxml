@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-res-text">{{responseText}}</view>
+    <view class="page-body-wording">
+      <text class="page-body-text">
+        点击向服务器发起请求
+      </text>
+    </view>
+    <view class="btn-area">
+      <button bindtap="makeRequest" type="primary" disabled="{{buttonDisabled}}" loading="{{loading}}">request</button>
+    </view>
+  </view>
+</view>
