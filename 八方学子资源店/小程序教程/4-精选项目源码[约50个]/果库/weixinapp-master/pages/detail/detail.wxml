@@ -1,0 +1,39 @@
+<view class="container">
+    <view>
+        <loading hidden="{{hidden}}">拼命加载中...</loading>
+    </view>
+    <scroll-view class="scroll" scroll-y="true" height="100%">
+        <swiper id="swiper" class="main-swiper" duration="300" autoplay="true" indicator-dots="true">
+            <block wx:for="{{piclists}}" wx:for-item="item">
+                <swiper-item>
+                    <image class="swiper-image" src="https://wlwywlqk.cn/img/{{item}}" mode="aspectFill"/>
+                </swiper-item>
+            </block>
+        </swiper>
+        <text class="name">{{name}}</text>
+        <view class="options">
+            <image class="option" src="../../icons/photo_heart.png"/>
+            <image class="option" src="../../icons/photo_note.png"/>
+            <image class="option" src="../../icons/more_shop.png"/>
+        </view>
+        <view class="gobuy">
+            <button size="mini">￥{{price}} 去购买</button>
+        </view>
+        <view class="comment">
+            <text class="comment-content">{{comment}}</text>
+            <view class="comment-time">
+                <icon type="waiting_circle" size="10" color="#aaa"/>{{comment_time}}
+            </view>   
+        </view>
+        <view class="same">
+            <view class="head">来自「{{category}}」</view>
+            <view class="nine">
+                <block wx:for="{{nine}}" wx:for-item="item">                  
+                    <navigator class="item" url="../detail/detail?_id={{item._id}}">
+                        <image src="https://wlwywlqk.cn/img/{{item.piclists[0]}}" mode="scaleToFill"/>
+                    </navigator>
+                </block>
+            </view>
+        </view>
+    </scroll-view>
+</view>

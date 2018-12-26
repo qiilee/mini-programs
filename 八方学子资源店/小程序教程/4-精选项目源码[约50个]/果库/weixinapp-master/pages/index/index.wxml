@@ -1,0 +1,68 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="header">
+    <view class='{{current == 0?"active":""}}' data-index="0" catchtap="bindHeaderTap">商品</view>
+    <view class='{{current == 1?"active":""}}' data-index="1" bindtap="bindHeaderTap">图文</view>
+    <view class="shift" animation="{{shiftanimation}}" ></view>
+  </view>
+  <view class="wrapper">
+    <swiper id="swiper" class="main-swiper" duration="300" current="{{current}}" bindchange="bindSwiper">
+      <swiper-item id="swiper-item">
+        
+        <view id="selected" class="selected">
+          <view class="pullrefresh" style="margin-top: {{margintop}}px; transition: {{duration}}s; animation-play-state:{{playstate}};">
+            <image src="/icons/pull_refresh_progress_bar17.png" style="width: 32px; height: 32px; transform: rotate({{rotate}}deg)"></image>
+          </view>
+          <view>
+            <loading hidden="{{hidden}}">拼命加载中...</loading>
+          </view>
+          <scroll-view id="scroll" 
+          bindtouchstart="onTouchStart" 
+          bindtouchmove="onTouchMove" 
+          bindtouchend="onTouchEnd" 
+          scroll-y="true" 
+          style="height: 100%;" 
+          bindscroll="onScroll">
+            <view class="scrollinner" style="height:{{scrollinner}}">
+              <block wx:for="{{goods}}" wx:for-item="item">
+                <navigator class="selected-item" url="../detail/detail?_id={{item._id}}">
+                  <image src="https://wlwywlqk.cn/img/{{item.piclists[0]}}" mode="aspectFit"></image>
+                  <text>{{item.comment}}</text>
+                  <view class="comment-time"><icon type="waiting_circle" size="10" color="#aaa"/>{{item.comment_time}}</view>
+                </navigator>
+              </block>
+            </view>
+          </scroll-view>
+        </view>
+      </swiper-item>
+
+
+      <swiper-item>
+        <view class="articles">
+          <view class="pullrefresh" style="margin-top: {{margintop2}}px; transition: {{duration2}}s; animation-play-state:{{playstate2}};">
+            <image src="/icons/pull_refresh_progress_bar17.png" style="width: 32px; height: 32px; transform: rotate({{rotate2}}deg)"></image>
+          </view>
+          <scroll-view id="scroll2" 
+          bindtouchstart="onTouchStart2" 
+          bindtouchmove="onTouchMove2" 
+          bindtouchend="onTouchEnd2" 
+          scroll-y="true" 
+          style="height: 100%;" 
+          bindscroll="onScroll2">
+            <view class="scrollinner" style="height:{{scrollinner2}}">
+              <block wx:for="{{articles}}" wx:for-item="item">
+                <navigator class="selected-item" url="../detail/detail?_id={{item._id}}">
+                  <image src="https://wlwywlqk.cn/img/{{item.piclists[0]}}" mode="center"></image>
+                  <text class="name">{{item.name}}</text>
+                  <text class="comment">{{item.comment}}</text>
+                  <view class="comment-time"><icon type="waiting_circle" size="10" color="#aaa"/>{{item.comment_time}}</view>
+                </navigator>
+              </block>
+            </view>
+          </scroll-view>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+
+</view>

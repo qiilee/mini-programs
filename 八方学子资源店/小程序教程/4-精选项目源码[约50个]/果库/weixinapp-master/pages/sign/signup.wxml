@@ -1,0 +1,10 @@
+<view class="container">
+    <image class="img" src="../../icons/splash_guoku.png"></image>
+    <form class="form" bindsubmit="bindSubmit">
+        <label>邮箱<input class="email" bindinput="bindEmail" type="text"/></label>
+        <label>密码<input class="password" bindinput="bindPassword" type="password"/></label>
+        <label>重复密码<input class="rpassword" bindinput="bindRPassword" type="password"/></label>
+        <button class="submit" size="mini" form-type="submit" >注册</button>
+        <text class="tips">{{tips}}</text>
+    </form>
+</view>

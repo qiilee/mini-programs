@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/search/search",
+    "pages/sign/signin",
+    "pages/sign/signup",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "果库",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color": "#eee",
+    "selectedColor": "#fff",
+    "backgroundColor": "#464547",
+    "borderStyle": "black",
+    "list":[{
+      "pagePath": "pages/index/index",
+      "text": "",
+      "iconPath": "icons/tabbar_icon_selection.png",
+      "selectedIconPath": "icons/tabbar_icon_selection_press.png"
+    },{
+      "pagePath": "pages/search/search",
+      "text": "",
+      "iconPath": "icons/tabbar_icon_discover.png",
+      "selectedIconPath": "icons/tabbar_icon_discover_press.png"
+    },{
+      "pagePath": "pages/sign/signin",
+      "text": "",
+      "iconPath": "icons/tabbar_icon_notifaction.png",
+      "selectedIconPath": "icons/tabbar_icon_notifaction_press.png"
+    },{
+      "pagePath": "pages/setting/setting",
+      "text": "",
+      "iconPath": "icons/tabbar_icon_setting.png",
+      "selectedIconPath": "icons/tabbar_icon_setting_press.png"
+    }]
+  }
+}

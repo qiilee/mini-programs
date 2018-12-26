@@ -1,0 +1,121 @@
+/**index.wxss**/
+page{
+  background: #eee;
+  height: 100%;
+}
+.header{
+  width: 100%;
+  height: 44px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  background: #fff;
+  line-height: 44px;
+  position: relative;
+  font-size: 32rpx;
+}
+.header view{
+  flex: 1;
+  text-align: center;
+}
+.wrapper{
+  flex: 1;
+}
+.main-swiper{
+  height: 100%;
+}
+.selected{
+  height: 100%;
+}
+.selected image{
+  width: 100%;
+  height: 750rpx;
+}
+.selected navigator{
+  background: #fff;
+  width: 100%;
+  margin-bottom: 10px;
+  box-shadow: 0px 1px 0px #fefefe;
+  padding: 10px 16px 12px;
+  box-sizing: border-box;
+}
+.selected text{
+  font-size: 16px;
+  line-height: 24px;
+  margin: 10px;
+  display: inline-block;
+}
+.selected .comment-time{
+  text-align: right;
+  font-size: 10px;
+  margin: 10px;
+}
+.articles{
+  height: 100%;
+}
+.articles image{
+  width: 100%;
+  height: 350rpx;
+}
+.articles navigator{
+  background: #fff;
+  width: 100%;
+  margin-bottom: 10px;
+  box-shadow: 0px 1px 0px #fefefe;
+  padding: 10px 16px 12px;
+  box-sizing: border-box;
+}
+.articles .name{
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px;
+  margin: 10px;
+  display: inline-block;
+}
+.articles .comment{
+  font-size: 12px;
+  color: #aaa;
+  line-height: 16px;
+  margin: 0 10px;
+  max-height: 32px;
+  overflow: hidden;
+  display: inline-block;
+}
+.articles .comment-time{
+  text-align: right;
+  font-size: 10px;
+  margin: 10px;
+}
+
+.shift{
+  position:absolute;
+  bottom: 1px;
+  height: 3px;
+  width: 20%;
+  background: #f0f;
+}
+.header .active{
+  color: #f0f;
+}
+#scroll{
+  overflow: auto;
+  height: 100%;
+  position: relative;
+}
+.pullrefresh{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  animation: pullrefresh .6s linear infinite;
+}
+.scrollinner{
+  overflow: hidden;
+}
+
+@keyframes pullrefresh{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
