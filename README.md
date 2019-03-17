@@ -1,3 +1,5 @@
+# mini-programs
+
 * 1.WXML 标签区分大小写  需闭合 特性 数据绑定 列表渲染 模板及引用 响应式像素 选择器
 * 2.共同属性  id class style hidden data bind/catch
 * 3.总是切换显示隐藏的话  用hidden属性
