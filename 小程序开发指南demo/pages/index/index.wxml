@@ -1,0 +1,46 @@
+<text>2.2.2 数据绑定 \n</text>
+
+<!-- 数据绑定 -->
+<text>当前时间：{{time}}\n</text>
+
+<!-- 绑定的变量大小写敏感 -->
+<view>{{w}}</view>
+<view>{{W}}</view>
+
+<!-- 没有被定义的变量的或者是被设置为 undefined 的变量不会被同步到 wxml 中 -->
+<view>{{var1}}</view>
+<view>{{var2}}</view>
+<view>{{var3}}</view>
+<view>{{var4}}</view>
+
+<text>2.2.3 逻辑语法 \n</text>
+
+<!-- 三元运算： -->
+<text>{{ a === 10? "变量 a 等于10": "变量 a 不等于10"}}</text>
+<!-- 算数运算 -->
+<view> {{a + b}} + {{c}} + d </view>
+<!-- {{ }}中还可以直接放置数字、字符串或者是数组 -->
+<text>{{[1,2,3]}}</text>
+<text>{{"hello world"}}</text>
+
+<view>2.2.4 条件逻辑</view>
+
+<view wx:if="{{length > 5}}"> 1 </view>
+<view wx:elif="{{length > 2}}"> 2 </view>
+<view wx:else> 3 </view>
+
+<view>2.2.5 列表渲染</view>
+<!-- array 是一个数组 -->
+<view wx:for="{{array}}">
+    {{index}}: {{item.message}}
+</view>
+
+<!-- 渲染一个包含多节点的结构块 -->
+<block wx:for="{{[1, 2, 3]}}">
+    <view> {{index}}: </view>
+    <view> {{item}} </view>
+</block>
+<!-- 使用 wx:for-item 指定数组当前元素的变量名，使用 wx:for-index 指定数组当前下标的变量名： -->
+<view wx:for="{{array}}" wx:for-index="idx" wx:for-item="itemName">
+    {{idx}}: {{itemName.message}}
+</view>
